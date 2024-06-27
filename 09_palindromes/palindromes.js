@@ -6,7 +6,7 @@ const palindromes = function (str) {
 const cleanStr = str.toLowerCase()
                       .split('').filter(e => e != ' ' && e != ',' && e != '!' && e != '.').join('');
   const reverse = Array.from(cleanStr).reverse().join('');
-  return reverse == cleanStr ? true : false;
+  return reverse === cleanStr;
 };
 
 // Do not edit below this line
